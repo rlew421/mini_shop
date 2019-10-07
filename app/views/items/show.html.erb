@@ -9,3 +9,5 @@
 <img src= <%= @item.image %>>
 <p>Inventory: <%= @item.inventory %></p>
 <p>Seller: <%= @item.merchant.name %></p>
+
+<ul><%= link_to "Edit Item", "/items/#{@item.id}/edit" %></ul>
