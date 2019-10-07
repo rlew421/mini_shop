@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get "/items", to: "items#index"
   get "/items/:id", to: "items#show"
+  get "/items/:id/edit", to: "items#edit"
   get "/merchants/:merchant_id/items", to: "items#index"
 
   get "/merchants", to: "merchants#index"
